@@ -1,0 +1,13 @@
+
+<div class="container-fluid">
+<div class="container" class="prodList">
+   <div class="row" *ngFor="let prod of prodList" (click)="onSelection(prod)">
+        <h1 class="col-md-4">{{prod.prodId}}</h1>
+        <h4 class="col-md-4">{{prod.prodName}}</h4>
+        <h4 class="col-md-4">{{prod.price}}</h4>
+    </div>
+</div>
+<div *ngIf="selectedProd" class="selectedProd">  
+<app-emp [prod]="selectedProd"></app-emp>
+  </div>
+</div>

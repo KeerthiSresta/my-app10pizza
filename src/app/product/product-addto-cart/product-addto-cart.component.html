@@ -1,0 +1,18 @@
+
+<div class="container">
+    <h2>Your order is added to cart  successfully</h2>
+    <!-- <ul class="list-group">
+      <li class="list-group-item">{{product.prodId}}</li>
+      <li class="list-group-item">{{product.prodName}}</li>
+      <li class="list-group-item">{{product.price}}</li>
+    </ul>
+    <button align="middle" type="button" class="btn btn-success">Order</button>
+  </div> -->
+ <div class="row" *ngFor="let product of products">
+   <div class="col-md-2">{{product.prodId}}</div>
+    <div class="col-md-2">{{product.prodName}}</div>
+      <div class="col-md-2">{{product.price}}</div>
+      <button align-box="middle" type="button" class="btn btn-success">Order</button>
+      
+ </div>
+
